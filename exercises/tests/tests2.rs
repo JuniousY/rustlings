@@ -8,6 +8,6 @@
 mod tests {
     #[test]
     fn you_can_assert_eq() {
-        assert_eq!();
+        assert_eq!(String::from("123"), "123");
     }
 }
