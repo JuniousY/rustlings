@@ -29,8 +29,13 @@ impl Package {
         return self.sender_country != self.recipient_country;
     }
 
+<<<<<<< HEAD
     fn get_fees(&self, cents_per_kg: i32) -> i32 {
         self.weight_in_grams * cents_per_kg
+=======
+    fn get_fees(&self, cents_per_gram: i32) -> ??? {
+        // Something goes here... 
+>>>>>>> 114b54c... fix(structs3): Small adjustment of variable name
     }
 }
 
@@ -62,10 +67,14 @@ mod tests {
         let sender_country = String::from("Spain");
         let recipient_country = String::from("Spain");
 
+<<<<<<< HEAD
         let cents_per_kg = 3;
+=======
+        let cents_per_gram = ???;
+>>>>>>> 114b54c... fix(structs3): Small adjustment of variable name
 
         let package = Package::new(sender_country, recipient_country, 1500);
 
-        assert_eq!(package.get_fees(cents_per_kg), 4500);
+        assert_eq!(package.get_fees(cents_per_gram), 4500);
     }
 }

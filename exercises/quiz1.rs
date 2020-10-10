@@ -21,3 +21,11 @@ fn verify_test() {
     assert_eq!(70, price1);
     assert_eq!(65, price2);
 }
+
+fn calculate_apple_price(amount: i32) -> i32 {
+    let mut cost = 2;
+    if (amount > 40) {
+        cost = 1;
+    }
+    amount * cost
+}
